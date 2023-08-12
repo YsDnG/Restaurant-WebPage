@@ -1,0 +1,70 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/**** CSS variables *****/
+:root{
+    --main-color-1: rgb(0, 8, 20);
+    --main-color-2: rgb(0, 29, 61);
+    --main-color-3: rgb(0, 53, 102);
+    --main-color-4: rgb(255, 195, 0);
+    --main-color-5: rgb(255, 214, 10);
+
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+}
+
+/***********************/
+
+#content
+{
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 3em;
+
+    background-image:url('../pages/img/pizza4.jpg');
+}
+
+.header{
+    width: 100vw;
+    height: 15vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: var(--main-color-5);
+    color: var(--main-color-6);
+}
+
+.header ul
+{
+    display: flex;
+    gap: 0.5em;
+
+    list-style: none;
+
+    font-size: 1.5em;
+}
+
+.page-content
+{
+    width: 80vw;
+    height: 65vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card-img img{
+    max-width: 100%;
+}
