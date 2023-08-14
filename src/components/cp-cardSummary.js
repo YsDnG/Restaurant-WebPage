@@ -1,10 +1,10 @@
 import Container from './cp-container'
 
-function createCard(element,title,paragraph,urlImg)
+function createCard(element,scriptName,title,paragraph,urlImg)
 {
-    console.log(title)
+   
     /*Card Img*/
-    const imgContainer = Container('card-img',element);
+    const imgContainer = Container(`${scriptName}-card-img`,element);
     
     const cardImg= document.createElement('img');
         cardImg.src= urlImg;
@@ -13,7 +13,7 @@ function createCard(element,title,paragraph,urlImg)
     imgContainer.appendChild(cardImg)
     /**/
     /* Card container for Title and description*/
-        const textContainer= Container('card-text',element);
+        const textContainer= Container(`${scriptName}-card-text`,element);
     /*Card title*/
         const cardTitle =document.createElement('h2');
         cardTitle.textContent = title;
@@ -21,7 +21,7 @@ function createCard(element,title,paragraph,urlImg)
     /**/
     /*Card text */
         const cardParagraph = document.createElement('p');
-        cardParagraph.textContent= paragraph;
+        cardParagraph.innerHTML= paragraph;
         textContainer.appendChild(cardParagraph)
     /* */
     

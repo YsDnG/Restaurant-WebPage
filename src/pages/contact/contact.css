@@ -1,1 +1,86 @@
 @import '../../style/common.css';
+
+
+
+/*********BASE STYLE***********/
+iframe
+{
+    width:100%;
+    height: 100%;
+     
+}
+
+/********************/
+
+/*********LAYOUT STYLE***********/
+.contact-content{
+    height: 100%;
+    width: 100%;
+
+    padding: 1em;
+    border-color: var(--main-color-5);
+    border: solid 2px var(--main-color-3);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1em;
+
+    background-color: rgba(200,200,200,0.1);
+
+    color: var(--main-color-5);
+    font-size: 1.5em;
+}
+.map-content
+{
+    width: 100%;
+    flex: 1;
+    border: solid 2px var(--main-color-5);
+}
+.info-contact
+{
+   
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5em;
+
+    overflow: hidden;
+    font-size: 0.5em;
+
+    border: solid 2px var(--main-color-5);
+
+    background-color: var(--main-color-5);
+}
+
+.contact-card-img {
+    height: 100%;
+    overflow: hidden; 
+    flex: 1;
+    border-right: solid 2px var(--main-color-5);
+   
+}
+.contact-card-img img{
+    height: 100%;
+}
+.contact-card-text
+{ 
+    flex: 1;
+    height: 100%;
+
+    padding: 0.5em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0.5em;
+
+    color: var(--main-color-1);
+    font-size: 1.5em;
+
+}
+
+/******************/

@@ -9,12 +9,20 @@ import DescriptionRestaurant from '../../components/cp-descriptionBlock'
 
 /******/
 
-const header = Header();
+export function createIndex(mainContent)
+{
+   
+    const presentation = Container('description',mainContent);
+    DescriptionRestaurant(presentation);
+}
 
-const mainContent = Container('page-content');
+const main = (()=>{
+    const header = Header();
+    const mainContent = Container('page-content');
+    createIndex(mainContent);
+})();
 
-const presentation = Container('description',mainContent);
-DescriptionRestaurant(presentation);
+
 
 
 

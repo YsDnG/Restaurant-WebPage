@@ -37,14 +37,16 @@
     border: 1px solid gray;
     gap: 0.2em;  
 }
-.card-img{
+.menu-card-img{
     width: 100%;
+    flex: 1;
     overflow: hidden; 
     border: 1px solid var(--main-color-5);
     
 }
-.card-text{
+.menu-card-text{
     padding: 0.2em;
+    flex: 1;
     
     display: flex;
     flex-direction: column;

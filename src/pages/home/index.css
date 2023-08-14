@@ -1,7 +1,7 @@
 @import '../../style/common.css';
 
 
-
+/*********LAYOUT STYLE***********/
 .description
 {
     height: 90%;
@@ -44,4 +44,4 @@
   touch-action: manipulation;
 }
 
-
+/********************/

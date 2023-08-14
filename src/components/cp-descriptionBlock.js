@@ -26,14 +26,13 @@ function createRestaurantDescription (element){
         menuBtn.textContent="Voir nos menus";
         menuBtn.addEventListener('click',()=>
         {
-            document.querySelector('.page-content').innerHTML='';
+
             import('../pages/menu/menu.js')
             .then(scriptMenu => 
             {
-
-                const pageContent = document.querySelector('.page-content');
-                const menuContent = Container('menu-content',pageContent);
-                scriptMenu.createMenuContent(menuContent);
+                /*Clear content for new items */
+                    document.querySelector('.page-content').innerHTML='';
+                scriptMenu.createMenuContent();
             })
             .catch(error => 
             {
