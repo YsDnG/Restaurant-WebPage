@@ -3,9 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:YsDnG/Restaurant-WebPage.git"
+  },
+  "homepage": "https://YsDnG.github.io/Restaurant-WebPage",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
