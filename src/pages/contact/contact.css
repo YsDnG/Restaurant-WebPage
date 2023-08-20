@@ -30,7 +30,7 @@ iframe
     background-color: rgba(200,200,200,0.1);
 
     color: var(--main-color-5);
-    font-size: 1.5em;
+   
 }
 .map-content
 {
@@ -57,13 +57,19 @@ iframe
 
 .contact-card-img {
     height: 100%;
+    width: auto;
     overflow: hidden; 
     flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
     border-right: solid 2px var(--main-color-5);
    
 }
 .contact-card-img img{
-    height: 100%;
+    max-width: 100%;
+    height: 90%;
+    border-radius: 10px;
 }
 .contact-card-text
 { 
@@ -79,8 +85,23 @@ iframe
     gap: 0.5em;
 
     color: var(--main-color-1);
-    font-size: 1.5em;
+    font-size: 1rem;
 
 }
 
 /******************/
+
+/******* MEDIA CSS *************/
+
+
+/* Pour les écrans encore plus petits */
+@media (max-width: 480px) {
+
+    .contact-card-img img{
+        max-width: 100%;
+        height: auto;
+        top: 0;
+        border-radius: 10px;
+    }
+    
+  }

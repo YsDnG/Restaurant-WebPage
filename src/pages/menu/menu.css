@@ -24,7 +24,7 @@
     background-color: rgba(200,200,200,0.1);
 
     color: var(--main-color-5);
-    font-size: 1.5em;
+    font-size: 1rem;
 }
 
 .plat
@@ -63,7 +63,7 @@
     text-decoration: underline;
     background-color: var(--main-color-5);
     color: var(--main-color-1);
-    font-size: 2em;
+    font-size: 1.5rem;
     grid-area: title;
 }
 /***********************/
@@ -74,5 +74,32 @@
 }
 /************************/
 
+/******* MEDIA CSS *************/
+
+
+/* Pour les écrans encore plus petits */
+@media (max-width: 480px) {
+
+    .menu-content
+    {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "title";
+        grid-auto-rows: minmax(200px,auto);
+        
+    }
+    .plat{
+        flex-direction:row;
+    }
+    .menu-card-img {
+        height: 80%;
+        width: auto;
+        display: flex;
+        justify-content: center;
+    }
+  
+   
+    
+  }
 
 

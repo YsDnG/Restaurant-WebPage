@@ -30,11 +30,13 @@
     gap: 1em;
 
     background-image:url('../img/pizza4.jpg');
+    font-size: 1.5rem;
 }
 
 .header{
     width: 100vw;
-    height: 15vh;
+    height: auto;
+    padding: 1rem;
 
     display: flex;
     justify-content: space-around;
@@ -42,6 +44,7 @@
 
     background-color: var(--main-color-5);
     color: var(--main-color-6);
+    overflow: hidden;
 }
 
 .header ul
@@ -50,8 +53,6 @@
     gap: 0.75em;
 
     list-style: none;
-
-    font-size: 1.5em;
 }
 .header ul li{
     
@@ -86,3 +87,28 @@
 .is-notActive{
     display: none;
 }
+
+/******* MEDIA CSS *************/
+
+
+/* Pour les écrans encore plus petits */
+@media (max-width: 480px) {
+
+    #content{
+        font-size: 1rem;
+    }
+    .header
+    {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .info-contact {
+      flex-direction: column; 
+    }
+
+    .menu-card-img img{
+        width: 100%;
+    }
+    
+  }
